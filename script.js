@@ -22,7 +22,7 @@ const winningConditions = [
   [2, 4, 6]
 ];
   
-function hadleResultValidation() {
+function handleResultValidation() {
   let roundWon = false;
   for(let i = 0; i <= 7; i++) {
     const winCondition = winningConditions[i];
@@ -64,7 +64,7 @@ const announce = (type) => {
   announcer.classList.remove("hide");
 };
 
-const isValidAcion = (tile) => {
+const isValidAction = (tile) => {
   if(tile.innerText === "X" || tile.innerText === "O") {
     return false;
   }
@@ -106,10 +106,11 @@ const resetBoard = () => {
     tile.innerText = "";
     tile.classList.remove("playerX");
     tile.classList.remove("playerO");
-});
+  });
+};
   
-tiles.forEach( (tile, index) => {
-  tile.addEventListener("click", () => userAction(tile, index));
+tiles.forEach((tile, index) => {
+  tile.addEventListener("click", userAction(tile, index));
 });
     
   
