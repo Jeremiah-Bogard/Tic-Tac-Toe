@@ -12,41 +12,33 @@
   </head>
   <body>
     
-    <main class="background">
+    <main>
       
-      <section class="title">
+      <header>
         
-        <h1>Tic Tac Toe</title>
+        <h1>Tic Tac Toe</h1>
+        
+        <p class="tinyPrint">Three In A Row</p>
+        
+        <p id="mssg">It's player <span id="playerTurn">X</span>'s turn!</p>
+        
+      </header>
+      
+      <section id="board">
+        
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
         
       </section>
       
-      <section class="display">
-        
-        Player <span class="display-player playerX">X</span>'s turn
-        
-      </section>
-      
-      <section class="container">
-        
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        
-      </section>
-      
-      <section class="display announcer hide"></section>
-      
-      <section class="controls">
-        
-        <button id="reset">Reset</button>
-        
-      </section>
+      <button id="reset">Reset</button>
       
     </main>
     
