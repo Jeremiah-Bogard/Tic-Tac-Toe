@@ -24,7 +24,7 @@ function checkForWinner() {
     if(card1 === card2 && card2 === card3 && card1 !== "" && card2 !== "" && card3 !== "") {
       var winnerIs = card1 || card2 || card3;
       
-      alert("Player " + winnerIs + " Wins!!!!");
+      document.getElementById("mssg").innerText = "Player " + winnerIs + " Wins!!!!";
     }
 
   }
@@ -69,6 +69,8 @@ function reset() {
     cards[i].innerText = "";
     
   }
+  
+  document.getElementById("mssg").innerHTML = "It's player <span id='playerTurn'>X</span>'s turn!";
   
   if(currentPlayer === "O") {
     updatePlayer();
