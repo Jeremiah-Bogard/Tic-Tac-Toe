@@ -1,68 +1,72 @@
 * {
-  padding: 0;
-  margin: 0;
-  font-family: cursive;
-}
-.background {
-  background-color: #12181b;
-  height: 100%;
-  padding-top: 1px;
-}
-.title {
-  color: #fff;
-  text-align: center;
-  font-size: 40px;
-  margin-top: 10%;
-}
-.display {
+  background: #222;
   color: #fff;
   font-size: 25px;
+  margin: 0;
+}
+
+
+main {
   text-align: center;
-  margin-top: 1em;
-  margin-bottom: 1em;
 }
-.hide {
-  display: none:
+
+
+header {
+  padding: 50px 10px;
 }
-.container {
-  margin: 0 auto;
+h1 {
+  font-size: 2em;
+}
+.tinyPrint {
+  font-size: 0.5em;
+}
+header #turn, header #playerTurn {
+  font-size: 0.8em;
+  font-weight: bold;
+  margin: 50px auto; 
+}
+
+
+#board {
   display: grid;
-  grid-template-columns: 33% 33%  33%;
+  grid-template-columns: 33% 33% 33%;
   grid-template-rows: 33% 33% 33%;
+  grid-gap: 10px;
+  margin: 0 auto;
   max-width: 300px;
 }
-.tile {
-  border: 1px solid #fff;
-  min-width: 100px;
+.card {
+  align-items: center;
+  background-color: #fff1;
+  border: solid 1px #555;
+  display: flex;
+  font-family: cursive;
+  font-size: 2em;
+  justify-content: center;
   min-height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 50px;
-  cursor: pointer;
+  min-width: 100px;
 }
-.playerX {
-  color: #09c372;
+.card .X {
+  color: #f00;
 }
-.playerO {
-  color: #498afb;
+.card .O {
+  color: #00f;
 }
-.controls {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1em;
-}
-#reset {
-  background-color: #ff3860;
-  color: #fff;
-  padding: 8px;
-  border-radius: 8px;
-  border: none;
-  font-size: 20px;
-  margin-left: 1em;
+.card:hover {
+  background-color: #fff2;
   cursor: pointer;
 }
 
-  
+
+#reset {
+  background-color: #f11a;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 50px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+#reset:hover {
+  background-color: #f11d;
+  cursor: pointer;
+}
