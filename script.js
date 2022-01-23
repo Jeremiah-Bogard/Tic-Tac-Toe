@@ -25,6 +25,25 @@ function checkForWinner() {
       var winnerIs = card1 || card2 || card3;
       
       document.getElementById("mssg").innerText = "Player " + winnerIs + " Wins!!!!";
+      
+    } else {
+      
+      var card1 = cards[0].textContent;
+      var card2 = cards[1].textContent;
+      var card3 = cards[2].textContent;
+      var card4 = cards[3].textContent;
+      var card5 = cards[4].textContent;
+      var card6 = cards[5].textContent;
+      var card7 = cards[6].textContent;
+      var card8 = cards[7].textContent;
+      var card9 = cards[8].textContent;
+      
+      if(card1 !== "" && card2 !== "" && card3 !== "" && card4 !== "" && card5 !== "" && card6 !== "" && card7 !== "" && card8 !== "" && card9 !== "") {
+      
+        document.getElementById("mssg").innerText = "It's a Tie!!!";
+        
+      }
+      
     }
 
   }
