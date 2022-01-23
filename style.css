@@ -20,7 +20,7 @@ h1 {
 .tinyPrint {
   font-size: 0.5em;
 }
-header #turn, header #playerTurn {
+header #mssg, header #playerTurn {
   font-size: 0.8em;
   font-weight: bold;
   margin: 50px auto; 
