@@ -69,7 +69,11 @@ function updateCard(card) {
     
   }
   
-  alert("Incorrect Move\nPlease try a different spot")
+  document.getElementById("warning").style.height = "100vh";
+  
+    setTimeout(function() {
+      document.getElementById("warning").style.height = "0";
+  }, 2000);
   
 }
 
