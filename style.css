@@ -70,3 +70,19 @@ header #mssg, header #playerTurn {
   background-color: #f11d;
   cursor: pointer;
 }
+
+
+#warning {
+  background-color: #f00;
+  color: #000;
+  height: 0;
+  left: 0;
+  position: sticky;
+  overflow: hidden;
+  text-align: center;
+  top: 0;
+  width: 100%;
+}
+#warning p {
+  background-color: #f00;
+}
