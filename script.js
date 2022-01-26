@@ -2,6 +2,8 @@ var currentPlayer = "X";
 
 var cards = document.getElementsByClassName("card");
 
+var haveWinner = false;
+
 /*
 1 2 3
 4 5 6
@@ -32,6 +34,7 @@ function checkForWinner() {
       var winnerIs = card1 || card2 || card3;
       
       document.getElementById("mssg").innerText = "Player " + winnerIs + " Wins!!!!";
+      haveWinner = true;
       
     } else {
       
@@ -67,7 +70,7 @@ function updatePlayer() {
 
 function updateCard(card) {
   
-  if(card.innerText === "") {
+  if(card.innerText === "" && !haveWinner) {
     
     card.innerText = currentPlayer;
     updatePlayer();
@@ -105,6 +108,8 @@ function reset() {
   if(currentPlayer === "O") {
     updatePlayer();
   }
+  
+  haveWinner = false;
   
 }
 
